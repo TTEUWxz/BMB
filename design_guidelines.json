@@ -1,0 +1,100 @@
+{
+  "identity": {
+    "name": "Lumina Auto Detailing",
+    "persona": "E1: The Anti-AI Designer",
+    "vibe": "Nocturnal Precision",
+    "principles": [
+      "Fusion over Imitation: Mix Automotive Industrial with Cyberpunk Aesthetics",
+      "Emotion First: Every interaction feels like a gear shift - precise and satisfying",
+      "Content is King: The car is the hero. Dark backgrounds make the gloss pop",
+      "Negative Space: Luxury is space. Don't crowd the UI"
+    ]
+  },
+  "typography": {
+    "headings": {
+      "family": "Unbounded, sans-serif",
+      "weights": ["400", "700"],
+      "usage": "Use for all section headers, hero text, and major calls to action. Letter spacing -0.02em.",
+      "import": "@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap');"
+    },
+    "body": {
+      "family": "Manrope, sans-serif",
+      "weights": ["400", "500", "600"],
+      "usage": "Use for all paragraphs, UI elements, and data tables.",
+      "import": "@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap');"
+    }
+  },
+  "colors": {
+    "mode": "dark",
+    "palette": {
+      "background": "#09090b",
+      "surface": "#18181b",
+      "surface_highlight": "#27272a",
+      "primary": "#3b82f6",
+      "primary_glow": "0 0 20px rgba(59, 130, 246, 0.5)",
+      "accent": "#eab308",
+      "text_primary": "#f4f4f5",
+      "text_secondary": "#a1a1aa",
+      "border": "rgba(255, 255, 255, 0.1)"
+    },
+    "gradients": {
+      "hero_glow": "radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.15) 0%, transparent 70%)",
+      "glass": "linear-gradient(180deg, rgba(24, 24, 27, 0.6) 0%, rgba(24, 24, 27, 0.8) 100%)"
+    }
+  },
+  "layout": {
+    "spacing_scale": "Generous. Use p-8 to p-12 for section padding.",
+    "grid_systems": {
+      "marketing": "Bento Grid (Tetris Mode). Mix col-span-2 and col-span-1 cards.",
+      "dashboard": "Control Room Grid. Dense, data-focused, 100% width utilization."
+    },
+    "containers": {
+      "glass_card": "backdrop-blur-xl bg-black/40 border border-white/10 rounded-xl shadow-2xl",
+      "neon_border": "relative rounded-xl overflow-hidden before:absolute before:inset-0 before:p-[1px] before:bg-gradient-to-r before:from-transparent before:via-blue-500 before:to-transparent before:content-['']"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-blue-600 hover:bg-blue-500 text-white rounded-full px-8 py-3 font-medium transition-all hover:shadow-[0_0_20px_rgba(59,130,246,0.4)]",
+      "secondary": "bg-white/5 hover:bg-white/10 text-white border border-white/10 rounded-full px-8 py-3 backdrop-blur-md"
+    },
+    "inputs": {
+      "style": "bg-black/20 border-white/10 focus:border-blue-500/50 focus:ring-blue-500/20 rounded-lg h-12 text-white placeholder:text-zinc-600"
+    },
+    "cards": {
+      "service_card": "group relative overflow-hidden rounded-2xl bg-zinc-900/50 border border-white/5 hover:border-blue-500/30 transition-all duration-500"
+    }
+  },
+  "images": {
+    "hero_bg": "https://images.pexels.com/photos/32718118/pexels-photo-32718118.jpeg",
+    "services": {
+      "wash": "https://images.pexels.com/photos/6872158/pexels-photo-6872158.jpeg",
+      "polishing": "https://images.pexels.com/photos/5233261/pexels-photo-5233261.jpeg",
+      "interior": "https://images.pexels.com/photos/16376825/pexels-photo-16376825.jpeg",
+      "revitalization": "https://images.pexels.com/photos/5158181/pexels-photo-5158181.jpeg"
+    }
+  },
+  "visual_enhancers": {
+    "noise": "Add a fixed position div with a noise texture opacity-5 pointer-events-none z-50 mix-blend-overlay",
+    "glows": "Use colored blobs (blue/purple) with blur-3xl opacity-20 behind key elements"
+  },
+  "instructions_to_main_agent": [
+    "CRITICAL: The project uses .js/.jsx files. DO NOT create .ts/.tsx files.",
+    "CRITICAL: Remove any default React logos or 'App.css' centering.",
+    "STEP 1: Install 'lucide-react', 'framer-motion', 'clsx', 'tailwind-merge' if not present.",
+    "STEP 2: Update index.css to include the Unbounded and Manrope fonts.",
+    "STEP 3: Create a 'Layout' component that enforces the Dark Mode background #09090b.",
+    "STEP 4: Build the Landing Page using the 'Bento Grid' layout for services.",
+    "STEP 5: Build the Booking Form using a multi-step wizard inside a 'Glass Card'.",
+    "STEP 6: Build the Admin Dashboard using the 'Control Room' density.",
+    "NOTE: For the 'Plastic Revitalization' service, use the 'revitalization' image provided.",
+    "NOTE: Ensure all text has sufficient contrast against the dark background (use text-zinc-100 and text-zinc-400)."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Do not use gradients for text unless it's a very large headline.",
+    "Avoid 'Inter' font. Use 'Manrope' for body.",
+    "Use 'sonner' for all notifications.",
+    "Always add data-testid to interactive elements.",
+    "Never use pure black #000000. Use #09090b or #18181b."
+  ]
+}
